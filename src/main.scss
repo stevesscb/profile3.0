@@ -6,8 +6,14 @@
   /* slate 400  */
   --color-primary: #94a3b8;
 
+  // violet 300
+  --color-secondary: #c4b5fd;
+
   /* slate 300  */
   --color-primary-hover: #cbd5e1;
+
+  // violet 200
+  --color-secondary-hover: #ddd6fe;
 
   --font-primary: 'DM Sans', sans-serif;
 }
@@ -32,4 +38,15 @@ body {
   color: var(--color-primary);
 
   font-family: var(--font-primary);
+}
+
+a {
+  cursor: pointer;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--color-primary-hover);
+  }
 }

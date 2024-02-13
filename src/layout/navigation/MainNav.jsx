@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import classes from './mainNav.module.scss';
@@ -36,7 +37,7 @@ function MainNav() {
     <>
       <nav
         onClick={handleNavOpen}
-        className={`${classes.nav} ${navOpen ? 'active' : null}`}
+        className={`${classes.nav} ${navOpen ? classes.active : null}`}
       >
         <span></span>
         <span></span>
@@ -44,17 +45,37 @@ function MainNav() {
       </nav>
       <AnimatePresence>
         {navOpen && (
-          <motion.ul
-            className={classes['nav-list']}
-            variants={container}
-            initial='hidden'
-            animate='visible'
-            exit='hidden'
-          >
-            <motion.li variants={item}>About me</motion.li>
-            <motion.li variants={item}>Projects</motion.li>
-            <motion.li variants={item}>Contact</motion.li>
-          </motion.ul>
+          <>
+            <div className={classes.backdrop}></div>
+            <motion.ul
+              className={classes['nav-list']}
+              variants={container}
+              initial='hidden'
+              animate='visible'
+              exit='hidden'
+            >
+              <motion.li className={classes['list-item']} variants={item}>
+                <Link to='/' onClick={handleNavOpen}>
+                  Home
+                </Link>
+              </motion.li>
+              <motion.li className={classes['list-item']} variants={item}>
+                <Link to='/about' onClick={handleNavOpen}>
+                  My story
+                </Link>
+              </motion.li>
+              <motion.li className={classes['list-item']} variants={item}>
+                <Link to='/projects' onClick={handleNavOpen}>
+                  Projects
+                </Link>
+              </motion.li>
+              <motion.li className={classes['list-item']} variants={item}>
+                <Link to='/contact' onClick={handleNavOpen}>
+                  Contact
+                </Link>
+              </motion.li>
+            </motion.ul>
+          </>
         )}
       </AnimatePresence>
     </>
