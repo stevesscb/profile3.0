@@ -1,0 +1,27 @@
+.nav {
+  cursor: pointer;
+
+  &:hover span {
+    background: var(--color-primary-hover);
+  }
+
+  span {
+    display: block;
+    height: 2px;
+    background: var(--color-primary);
+
+    margin: 1rem;
+
+    &:first-child {
+      width: 4rem;
+    }
+
+    &:nth-child(2) {
+      width: 3rem;
+    }
+
+    &:last-child {
+      width: 2rem;
+    }
+  }
+}
