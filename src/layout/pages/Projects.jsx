@@ -1,5 +1,9 @@
 function Projects() {
-  return <h1>Projects page!</h1>;
+  return (
+    <>
+      <h2>My projects</h2>
+    </>
+  );
 }
 
 export default Projects;

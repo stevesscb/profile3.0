@@ -11,8 +11,6 @@ function MainNav() {
     setNavOpen(navOpen === false ? true : false);
   };
 
-  console.log(navOpen);
-
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {

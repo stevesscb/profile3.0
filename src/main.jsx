@@ -8,7 +8,7 @@ import Root from './layout/Root';
 import Home from './layout/pages/Home';
 import About from './layout/pages/About';
 import Projects from './layout/pages/Projects';
-import Contact from './layout/pages/Contact';
+import Contact from './layout/pages/contact/Contact';
 import ErrorPage from './layout/pages/ErrorPage';
 
 const router = createBrowserRouter([
