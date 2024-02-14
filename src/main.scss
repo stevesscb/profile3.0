@@ -1,19 +1,16 @@
-/* Globals  */
 :root {
-  /* Variables  */
-  --color-background: #020617;
+  --color-background: #020617; // slate 950
+  --color-shadow: #1e293b; // slate 800
 
-  /* slate 400  */
-  --color-primary: #94a3b8;
+  --color-primary: #94a3b8; // slate 400
+  --color-primary-hover: #cbd5e1; // slate 300
 
-  // violet 300
-  --color-secondary: #c4b5fd;
+  --color-secondary: #c4b5fd; // violet 300
+  --color-secondary-hover: #ddd6fe; // violet 200
 
-  /* slate 300  */
-  --color-primary-hover: #cbd5e1;
-
-  // violet 200
-  --color-secondary-hover: #ddd6fe;
+  --color-input-bg: #ddd6fe;
+  --color-button-bg: #020617;
+  --color-button-hover: #1e293b;
 
   --font-primary: 'DM Sans', sans-serif;
 }

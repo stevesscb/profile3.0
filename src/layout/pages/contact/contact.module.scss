@@ -1,0 +1,12 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+
+  .colOne,
+  .colTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
