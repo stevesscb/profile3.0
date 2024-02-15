@@ -4,12 +4,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'src/main.scss';
 
 // Pages
-import Root from './layout/Root';
-import Home from './layout/pages/Home';
-import About from './layout/pages/About';
-import Projects from './layout/pages/Projects';
-import Contact from './layout/pages/contact/Contact';
-import ErrorPage from './layout/pages/ErrorPage';
+import Root from 'src/layout/Root';
+import Home from 'src/layout/pages/home/Home';
+import About from 'src/layout/pages/about/About';
+import Projects from 'src/layout/pages/projects/Projects';
+import Contact from 'src/layout/pages/contact/Contact';
+import ErrorPage from 'src/layout/pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
