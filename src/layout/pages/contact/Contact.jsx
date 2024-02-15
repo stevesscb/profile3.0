@@ -1,4 +1,6 @@
-import Form from '../../../components/form/Form';
+import Form from 'src/components/form/Form';
+import SocialLinks from 'src/components/socialLinks/SocialLinks';
+import MotionAnimate from 'src/components/MotionAnimate';
 
 import classes from './contact.module.scss';
 
@@ -6,10 +8,15 @@ function Contact() {
   return (
     <div className={classes.contact}>
       <div className={classes.colOne}>
-        <Form />
+        <MotionAnimate>
+          <Form />
+        </MotionAnimate>
       </div>
       <div className={classes.colTwo}>
-        <h4>Contact me</h4>
+        <MotionAnimate>
+          <p className={classes.heading}>Find me on</p>
+          <SocialLinks />
+        </MotionAnimate>
       </div>
     </div>
   );
