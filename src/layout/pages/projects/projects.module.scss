@@ -1,0 +1,16 @@
+.projects {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100%;
+
+  .colOne,
+  .colTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .colOne {
+    // background: red;
+  }
+}
