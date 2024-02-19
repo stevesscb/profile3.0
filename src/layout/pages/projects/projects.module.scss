@@ -10,7 +10,22 @@
     justify-content: center;
   }
 
-  .colOne {
-    // background: red;
+  .imgContainer {
+    width: 60rem;
+    height: 60rem;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 5px;
+
+    &:hover {
+      box-shadow: var(--color-secondary-hover) 0px 8px 24px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
   }
 }
