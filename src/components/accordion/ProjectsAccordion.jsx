@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+import openLink from 'src/images/link.svg';
+
+import { projects } from '../../projectData';
+
+import classes from './projectsAccordion.module.scss';
 
 const accordionStyles = {
   color: '#94a3b8',
@@ -38,147 +44,45 @@ const iconStyles = {
   },
 };
 
-export default function ProjectsAccordion() {
+export default function ProjectsAccordion(props) {
   const [expanded, setExpanded] = useState('panel1');
 
-  const handleChange = (panel) => (event, newExpanded) => {
+  const handleChange = (panel) => (newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
 
+  useEffect(() => {
+    props.projectName(expanded);
+  }, [expanded]);
+
   return (
     <>
-      <Accordion
-        sx={accordionStyles}
-        expanded={expanded === 'panel1'}
-        onChange={handleChange('panel1')}
-      >
-        <AccordionSummary
-          sx={summaryStyles}
-          expandIcon={<ExpandMoreIcon sx={iconStyles} />}
-          aria-controls='panel1-content'
-          id='panel1-header'
+      {projects.map((project) => (
+        <Accordion
+          key={project.id}
+          sx={accordionStyles}
+          expanded={expanded === project.id}
+          onChange={handleChange(project.id)}
         >
-          Horizon Digital
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        sx={accordionStyles}
-        expanded={expanded === 'panel2'}
-        onChange={handleChange('panel2')}
-      >
-        <AccordionSummary
-          sx={summaryStyles}
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls='panel2-content'
-          id='panel2-header'
-        >
-          Jobs In Cyber
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        sx={accordionStyles}
-        expanded={expanded === 'panel3'}
-        onChange={handleChange('panel3')}
-      >
-        <AccordionSummary
-          sx={summaryStyles}
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls='panel3-content'
-          id='panel3-header'
-        >
-          Jobs In Cyber
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        sx={accordionStyles}
-        expanded={expanded === 'panel4'}
-        onChange={handleChange('panel4')}
-      >
-        <AccordionSummary
-          sx={summaryStyles}
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls='panel4-content'
-          id='panel4-header'
-        >
-          Jobs In Cyber
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        sx={accordionStyles}
-        expanded={expanded === 'panel5'}
-        onChange={handleChange('panel5')}
-      >
-        <AccordionSummary
-          sx={summaryStyles}
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls='panel5-content'
-          id='panel5-header'
-        >
-          Jobs In Cyber
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        sx={accordionStyles}
-        expanded={expanded === 'panel6'}
-        onChange={handleChange('panel6')}
-      >
-        <AccordionSummary
-          sx={summaryStyles}
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls='panel6-content'
-          id='panel6-header'
-        >
-          Jobs In Cyber
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion
-        sx={accordionStyles}
-        expanded={expanded === 'panel7'}
-        onChange={handleChange('panel7')}
-      >
-        <AccordionSummary
-          sx={summaryStyles}
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls='panel7-content'
-          id='panel7-header'
-        >
-          Jobs In Cyber
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
+          <AccordionSummary
+            sx={summaryStyles}
+            expandIcon={<ExpandMoreIcon sx={iconStyles} />}
+            aria-controls={`${project.id}-content`}
+            id={`${project.id}-header`}
+          >
+            {project.title}
+          </AccordionSummary>
+          <AccordionDetails>
+            {project.description}
+            <p className={classes.projectLink}>
+              <a href={project.url} target='_blank'>
+                Open site
+              </a>
+              <img src={openLink} alt='open link to external website' />
+            </p>
+          </AccordionDetails>
+        </Accordion>
+      ))}
     </>
   );
 }
