@@ -31,7 +31,7 @@ const accordionStyles = {
 const summaryStyles = {
   borderRadius: '5px',
   '&.Mui-expanded': {
-    background: '#0f172a',
+    background: '#1e293b',
     color: '#cbd5e1',
   },
 };
