@@ -10,6 +10,7 @@ import openLink from 'src/images/link.svg';
 import { projects } from '../../projectData';
 
 import classes from './projectsAccordion.module.scss';
+import DynamicImage from '../DynamicImage';
 
 const accordionStyles = {
   color: '#94a3b8',
@@ -74,6 +75,9 @@ export default function ProjectsAccordion(props) {
           </AccordionSummary>
           <AccordionDetails>
             {project.description}
+            <div className={classes.imageContainer}>
+              <DynamicImage panel={expanded} />
+            </div>
             <p className={classes.projectLink}>
               <a href={project.url} target='_blank'>
                 Open site

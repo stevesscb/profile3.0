@@ -3,11 +3,21 @@
   grid-template-columns: 40% 60%;
   height: 100%;
 
+  @media only screen and (max-width: 50em) {
+    display: flex;
+  }
+
   .colOne,
   .colTwo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .colTwo {
+    @media only screen and (max-width: 50em) {
+      display: none;
+    }
   }
 
   .imgContainer {
@@ -16,6 +26,12 @@
     overflow: hidden;
     margin: 0 auto;
     border-radius: 5px;
+    transition: all 0.2s ease;
+
+    @media only screen and (max-width: 68.75em) {
+      width: 50rem;
+      height: 50rem;
+    }
 
     &:hover {
       box-shadow: var(--color-secondary-hover) 0px 8px 24px;

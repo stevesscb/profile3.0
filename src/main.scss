@@ -8,12 +8,13 @@
   --color-secondary: #c4b5fd; // violet 300
   --color-secondary-hover: #ddd6fe; // violet 200
 
-  --color-input-bg: #ddd6fe; // violet 200
-  --color-button-bg: #020617; // slate 950
-  --color-button-hover: #1e293b; // slate 800
-
   --font-primary: 'DM Sans', sans-serif;
 }
+
+// Break points
+$bp-large: 87.5em; // 1400px
+$bp-medium: 28.75em; // 460px
+$bp-small: 24.37em; // 390px
 
 *,
 *::before,
@@ -28,6 +29,14 @@ html {
 
   /* 10px = 1rem  */
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
 }
 
 body {
