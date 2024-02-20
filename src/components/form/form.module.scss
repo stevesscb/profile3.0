@@ -31,11 +31,11 @@
     border-radius: 5px;
     transition: all 0.2s ease;
 
-    background: var(--color-button-bg);
+    background: var(--color-background);
     color: var(--color-primary);
 
     &:hover {
-      background: var(--color-button-hover);
+      background: var(--color-shadow);
     }
   }
 }

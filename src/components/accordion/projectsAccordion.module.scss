@@ -1,3 +1,22 @@
+.imageContainer {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  display: none;
+  margin-top: 1rem;
+
+  @media only screen and (max-width: 50em) {
+    display: block;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
 .projectLink {
   margin-top: 1rem;
   display: flex;

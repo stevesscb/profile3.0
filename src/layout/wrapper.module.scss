@@ -13,5 +13,13 @@
 
   &:hover {
     box-shadow: var(--color-secondary) 2.4px 2.4px 3.2px;
+
+    @media only screen and (max-width: 87.5em) {
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (max-width: 87.5em) {
+    box-shadow: none;
   }
 }

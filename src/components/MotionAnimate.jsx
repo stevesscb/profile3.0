@@ -23,9 +23,9 @@ function MotionAnimate({ children }) {
 
   return (
     <AnimatePresence>
-      <motion.container variants={container} initial='hidden' animate='visible'>
-        <motion.item variants={item}>{children}</motion.item>
-      </motion.container>
+      <motion.div variants={container} initial='hidden' animate='visible'>
+        <motion.div variants={item}>{children}</motion.div>
+      </motion.div>
     </AnimatePresence>
   );
 }
