@@ -22,8 +22,8 @@
     }
   }
 
-  .heading {
-    font-size: 1.5rem;
+  p {
+    font-size: var(--font-medium);
     text-align: center;
   }
 }
