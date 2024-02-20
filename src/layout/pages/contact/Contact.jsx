@@ -14,7 +14,7 @@ function Contact() {
       </div>
       <div className={classes.colTwo}>
         <MotionAnimate>
-          <p className={classes.heading}>Find me on</p>
+          <p>Find me on</p>
           <SocialLinks />
         </MotionAnimate>
       </div>

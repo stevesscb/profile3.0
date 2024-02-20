@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 import MotionAnimate from 'src/components/MotionAnimate';
 import ProjectsAccordion from 'src/components/accordion/ProjectsAccordion';
+import DynamicImage from 'src/components/DynamicImage';
 
 import classes from './projects.module.scss';
-import DynamicImage from 'src/components/DynamicImage';
 
 function Projects() {
   const [panel, setPanel] = useState('panel1');

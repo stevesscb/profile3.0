@@ -1,8 +1,9 @@
 .form {
+  font-size: var(--font-medium);
+  padding: 1rem;
+
   display: flex;
   flex-direction: column;
-  font-size: 1.6rem;
-  padding: 1rem;
 
   input,
   textarea {
