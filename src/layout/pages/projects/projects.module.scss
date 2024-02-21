@@ -2,8 +2,10 @@
   display: grid;
   grid-template-columns: 40% 60%;
   height: 100%;
+  overflow-y: auto;
 
   @media only screen and (max-width: 50em) {
+    height: auto;
     display: flex;
   }
 
