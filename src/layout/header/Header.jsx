@@ -1,6 +1,6 @@
 import MainNav from 'src/layout/navigation/MainNav';
 
-import classes from './header.module.css';
+import classes from './header.module.scss';
 
 function Header() {
   return (

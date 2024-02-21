@@ -1,0 +1,29 @@
+.contact {
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: 42.5em) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .colOne,
+  .colTwo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 42.5em) {
+      margin-top: 4rem;
+    }
+  }
+
+  p {
+    font-size: var(--font-medium);
+    text-align: center;
+  }
+}

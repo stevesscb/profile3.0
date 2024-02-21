@@ -1,0 +1,33 @@
+.about {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  @media only screen and (max-width: 42.5em) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .colOne {
+    font-size: var(--font-medium);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h4 {
+      font-size: var(--font-large);
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .cta {
+      color: var(--color-secondary);
+
+      &:hover {
+        color: var(--color-secondary-hover);
+      }
+    }
+  }
+}

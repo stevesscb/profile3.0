@@ -1,0 +1,30 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-size: var(--font-large);
+
+  .cta {
+    margin-top: 1rem;
+
+    a {
+      color: var(--color-secondary);
+
+      &:after {
+        content: '>>';
+        margin-left: 5px;
+        display: inline-block;
+        transition: all 0.2s ease;
+      }
+
+      &:hover {
+        color: var(--color-secondary-hover);
+
+        &:after {
+          transform: translateX(3px);
+        }
+      }
+    }
+  }
+}

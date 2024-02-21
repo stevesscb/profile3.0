@@ -1,17 +1,24 @@
 .header {
   text-transform: uppercase;
   color: var(--color-primary);
+  margin-bottom: 5rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   h1 {
-    font-size: 2.5rem;
+    font-size: var(--font-heading-main);
+  }
+
+  h2 {
+    font-size: var(--font-heading-sub);
   }
 
   h1,
   h2 {
+    position: relative;
+    z-index: 2;
     letter-spacing: 1px;
     font-weight: 400;
   }

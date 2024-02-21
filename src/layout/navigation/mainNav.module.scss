@@ -1,5 +1,6 @@
 .nav {
   cursor: pointer;
+  z-index: 2;
 
   &:hover span {
     background: var(--color-primary-hover);
@@ -9,6 +10,7 @@
     display: block;
     height: 2px;
     background: var(--color-primary);
+    transition: all 0.4s ease;
 
     margin: 1rem;
 
@@ -23,5 +25,51 @@
     &:last-child {
       width: 2rem;
     }
+  }
+}
+
+.active {
+  span {
+    transition: all 0.6s ease-in-out;
+
+    &:first-child {
+      transform: translateY(6px) rotate(40deg);
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:last-child {
+      width: 4rem;
+      transform: translateY(-6px) rotate(-40deg);
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-background);
+  z-index: 1;
+}
+
+.nav-list {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2;
+
+  text-align: center;
+  list-style: none;
+
+  .list-item {
+    cursor: pointer;
+    margin: 1.5rem;
+    font-size: 2.5rem;
   }
 }

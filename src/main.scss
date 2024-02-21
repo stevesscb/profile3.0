@@ -1,0 +1,64 @@
+:root {
+  --color-background: #020617; // slate 950
+  --color-shadow: #1e293b; // slate 800
+
+  --color-primary: #94a3b8; // slate 400
+  --color-primary-hover: #cbd5e1; // slate 300
+
+  --color-secondary: #c4b5fd; // violet 300
+  --color-secondary-hover: #ddd6fe; // violet 200
+
+  --font-primary: 'DM Sans', sans-serif;
+
+  --font-heading-main: 2.5rem;
+  --font-heading-sub: 1.7rem;
+  --font-large: 1.8rem;
+  --font-medium: 1.6rem;
+  --font-small: 1.4rem;
+}
+
+// Break points
+$bp-large: 87.5em; // 1400px
+$bp-medium: 28.75em; // 460px
+$bp-small: 24.37em; // 390px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* 10px = 1rem  */
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+
+  font-family: var(--font-primary);
+}
+
+a {
+  cursor: pointer;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--color-primary-hover);
+  }
+}
