@@ -3,7 +3,7 @@ export const projects = [
     id: 'panel1',
     title: 'Horizon Digital',
     description:
-      'For this project I was faced with the challenge of designing and building a new website for the company I work for. I learnt a lot of valuable skills including best design practices for improved UX experience and accessibility standards. It was rewarding to see the final product go live.',
+      'For this project I was faced with the challenge of designing and building a new website for the company I work for. I learnt a lot of valuable skills including best design practices for improved UX experience and accessibility standards.',
     url: 'https://horizondigital.au/',
   },
 
@@ -11,7 +11,7 @@ export const projects = [
     id: 'panel2',
     title: 'Jobs In Cyber',
     description:
-      'This task was to give an existing web application a revamp carrying out bug fixes, implementing new features and building new designs. It was great to be a part of such a collaborative process.',
+      'This task was to give an existing web application a revamp. Carrying out bug fixes, implementing new features and building new designs. It was great to be a part of such a collaborative process.',
     url: 'https://uat.jobsincyber.com/candidate/listings',
   },
 
