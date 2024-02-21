@@ -1,4 +1,4 @@
-import Form from 'src/components/form/Form';
+import ContactForm from 'src/components/form/ContactForm';
 import SocialLinks from 'src/components/socialLinks/SocialLinks';
 import MotionAnimate from 'src/components/MotionAnimate';
 
@@ -9,7 +9,7 @@ function Contact() {
     <div className={classes.contact}>
       <div className={classes.colOne}>
         <MotionAnimate>
-          <Form />
+          <ContactForm />
         </MotionAnimate>
       </div>
       <div className={classes.colTwo}>

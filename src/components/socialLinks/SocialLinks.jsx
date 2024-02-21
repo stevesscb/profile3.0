@@ -13,22 +13,22 @@ function SocialLinks() {
           target='blank'
         >
           <img src={linkedIn} alt='LinkedIn logo' />
+          <p>LinkedIn</p>
         </a>
-        <p>LinkedIn</p>
       </li>
 
       <li>
         <a href='https://github.com/stevesscb' target='blank'>
           <img src={github} alt='Github logo' />
+          <p>Github</p>
         </a>
-        <p>Github</p>
       </li>
 
       <li>
         <a href='mailto:beast_feud0f@icloud.com' target='blank'>
           <img src={mail} alt='Email logo' />
+          <p>Email</p>
         </a>
-        <p>Email</p>
       </li>
     </ul>
   );
