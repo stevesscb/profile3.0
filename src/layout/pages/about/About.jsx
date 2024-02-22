@@ -17,10 +17,11 @@ function About() {
           <br />
           <p>
             While my main experience lies in code, I also have a strong interest
-            in design. If you like what you hear and think we could collaborate
+            in design.
           </p>
+          <br />
           <p>
-            please
+            If you like what you hear and think we could collaborate please
             <Link to='/contact' className={classes.cta}>
               &nbsp;get in touch.
             </Link>
