@@ -7,7 +7,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import openLink from 'src/images/link.svg';
 
-import { projects } from '../../projectData';
+import { professionalProjects } from '../../projectData';
+import { personalProjects } from '../../projectData';
 
 import classes from './projectsAccordion.module.scss';
 import DynamicImage from '../DynamicImage';
@@ -46,11 +47,22 @@ const iconStyles = {
 };
 
 export default function ProjectsAccordion(props) {
-  const [expanded, setExpanded] = useState('panel1');
+  const [expanded, setExpanded] = useState('professional1');
+  const [category, setCategory] = useState('professional');
 
   const handleChange = (panel) => (newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
+
+  function handleProfessional() {
+    setCategory('professional');
+    setExpanded('professional1');
+  }
+
+  function handlePersonal() {
+    setCategory('personal');
+    setExpanded('personal1');
+  }
 
   useEffect(() => {
     props.projectName(expanded);
@@ -58,35 +70,86 @@ export default function ProjectsAccordion(props) {
 
   return (
     <>
-      {projects.map((project) => (
-        <Accordion
-          key={project.id}
-          sx={accordionStyles}
-          expanded={expanded === project.id}
-          onChange={handleChange(project.id)}
+      <div className={classes.categories}>
+        <p
+          className={`${category === 'professional' ? classes.active : null} `}
+          onClick={handleProfessional}
         >
-          <AccordionSummary
-            sx={summaryStyles}
-            expandIcon={<ExpandMoreIcon sx={iconStyles} />}
-            aria-controls={`${project.id}-content`}
-            id={`${project.id}-header`}
-          >
-            {project.title}
-          </AccordionSummary>
-          <AccordionDetails>
-            {project.description}
-            <div className={classes.imageContainer}>
-              <DynamicImage panel={expanded} />
-            </div>
-            <p className={classes.projectLink}>
-              <a href={project.url} target='_blank'>
-                Open site
-              </a>
-              <img src={openLink} alt='open link to external website' />
-            </p>
-          </AccordionDetails>
-        </Accordion>
-      ))}
+          Professional
+        </p>
+        <p
+          className={`${category === 'personal' ? classes.active : null} `}
+          onClick={handlePersonal}
+        >
+          Personal
+        </p>
+      </div>
+      {category === 'professional' && (
+        <div className={classes.accordion}>
+          {professionalProjects.map((professionalProject) => (
+            <Accordion
+              key={professionalProject.id}
+              sx={accordionStyles}
+              expanded={expanded === professionalProject.id}
+              onChange={handleChange(professionalProject.id)}
+            >
+              <AccordionSummary
+                sx={summaryStyles}
+                expandIcon={<ExpandMoreIcon sx={iconStyles} />}
+                aria-controls={`${professionalProject.id}-content`}
+                id={`${professionalProject.id}-header`}
+              >
+                {professionalProject.title}
+              </AccordionSummary>
+              <AccordionDetails>
+                {professionalProject.description}
+                <div className={classes.imageContainer}>
+                  <DynamicImage panel={expanded} />
+                </div>
+                <p className={classes.projectLink}>
+                  <a href={professionalProject.url} target='_blank'>
+                    Open site
+                  </a>
+                  <img src={openLink} alt='open link to external website' />
+                </p>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
+      )}
+      {category === 'personal' && (
+        <div className={classes.accordion}>
+          {personalProjects.map((personalProject) => (
+            <Accordion
+              key={personalProject.id}
+              sx={accordionStyles}
+              expanded={expanded === personalProject.id}
+              onChange={handleChange(personalProject.id)}
+            >
+              <AccordionSummary
+                sx={summaryStyles}
+                expandIcon={<ExpandMoreIcon sx={iconStyles} />}
+                aria-controls={`${personalProject.id}-content`}
+                id={`${personalProject.id}-header`}
+              >
+                {personalProject.title}
+              </AccordionSummary>
+              <AccordionDetails>
+                {personalProject.description}
+                <div className={classes.imageContainer}>
+                  <DynamicImage panel={expanded} />
+                </div>
+                <p className={classes.projectLink}>
+                  <a href={personalProject.url} target='_blank'>
+                    Open site
+                  </a>
+                  <img src={openLink} alt='open link to external website' />
+                </p>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
+      )}
     </>
   );
 }

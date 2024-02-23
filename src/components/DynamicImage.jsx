@@ -14,6 +14,9 @@ import hireMiiWebp from 'src/images/hiremii.webp';
 import enableWebp from 'src/images/enable.webp';
 import foodieBoxWebp from 'src/images/foodie-box.webp';
 
+import portfolio from 'src/images/portfolio.png';
+import portfolioWebp from 'src/images/portfolio.webp';
+
 function DynamicImage({ panel }) {
   const [project, setProject] = useState({
     imageWp: '',
@@ -22,7 +25,7 @@ function DynamicImage({ panel }) {
   });
 
   const handleProjectImage = () => {
-    if (panel === 'panel1') {
+    if (panel === 'professional1') {
       setProject({
         imageWp: horizonDigitalWebp,
         image: horizonDigital,
@@ -30,15 +33,15 @@ function DynamicImage({ panel }) {
       });
     }
 
-    if (panel === 'panel2') {
+    if (panel === 'professional2') {
       setProject({
         imageWp: jobsInCyberWebp,
         image: jobsInCyber,
-        url: 'https://uat.jobsincyber.com/candidate/listings',
+        url: '#',
       });
     }
 
-    if (panel === 'panel3') {
+    if (panel === 'professional3') {
       setProject({
         imageWp: lingnanUniversityWebp,
         image: lingnanUniversity,
@@ -46,7 +49,7 @@ function DynamicImage({ panel }) {
       });
     }
 
-    if (panel === 'panel4') {
+    if (panel === 'professional4') {
       setProject({
         imageWp: hireMiiWebp,
         image: hireMii,
@@ -54,7 +57,7 @@ function DynamicImage({ panel }) {
       });
     }
 
-    if (panel === 'panel5') {
+    if (panel === 'professional5') {
       setProject({
         imageWp: enableWebp,
         image: enable,
@@ -62,11 +65,19 @@ function DynamicImage({ panel }) {
       });
     }
 
-    if (panel === 'panel6') {
+    if (panel === 'professional6') {
       setProject({
         imageWp: foodieBoxWebp,
         image: foodieBox,
         url: 'https://www.ln.edu.hk/cultural/',
+      });
+    }
+
+    if (panel === 'personal1') {
+      setProject({
+        imageWp: portfolioWebp,
+        image: portfolio,
+        url: 'https://scb-development.vercel.app/',
       });
     }
   };
