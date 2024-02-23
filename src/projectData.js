@@ -53,7 +53,7 @@ export const personalProjects = [
     id: 'personal1',
     title: 'Portfolio site',
     description:
-      'For this assignment, I wanted to create my own portfolio website utilizing CSS grid and SCSS along with React Gatsby. I chose to use SCSS as I enjoy using the BEM notation in my HTML - I find this method very clean and clear to read. I also enjoyed steering away from using any CSS framework as I was able to create all my own layouts and components relying on my skills as a CSS developer',
+      'For this assignment, I wanted to create my own portfolio website utilizing CSS grid and SCSS along with React Gatsby. I chose to use SCSS as I enjoy using the BEM notation in my HTML - I find this method very clean and clear to read. I also enjoyed steering away from using any CSS framework as I was able to create all my own layouts and components relying on my skills as a CSS developer.',
     url: 'https://scb-development.vercel.app/',
   },
 ];
