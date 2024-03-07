@@ -1,4 +1,5 @@
 export const professionalProjects = [
+  // Horizon Digital
   {
     id: 'professional1',
     title: 'Horizon Digital',
@@ -7,6 +8,7 @@ export const professionalProjects = [
     url: 'https://horizondigital.au/',
   },
 
+  // Jobs In Cyber
   {
     id: 'professional2',
     title: 'Jobs In Cyber',
@@ -15,6 +17,7 @@ export const professionalProjects = [
     url: '#',
   },
 
+  // Lingnan University
   {
     id: 'professional3',
     title: 'Lingnan University',
@@ -23,6 +26,7 @@ export const professionalProjects = [
     url: 'https://www.ln.edu.hk/cultural/',
   },
 
+  // Hiremii
   {
     id: 'professional4',
     title: 'Hiremii',
@@ -31,6 +35,7 @@ export const professionalProjects = [
     url: 'https://hiremii.com/',
   },
 
+  // Enable
   {
     id: 'professional5',
     title: 'Enable',
@@ -39,6 +44,7 @@ export const professionalProjects = [
     url: 'http://enable-app-landing-site.s3-website-ap-southeast-2.amazonaws.com/',
   },
 
+  // My Foodie Box
   {
     id: 'professional6',
     title: 'My Foodie Box',
@@ -49,6 +55,7 @@ export const professionalProjects = [
 ];
 
 export const personalProjects = [
+  // Portfolio site
   {
     id: 'personal1',
     title: 'Portfolio site',
