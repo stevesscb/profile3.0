@@ -4,8 +4,44 @@ export const professionalProjects = [
     id: 'professional1',
     title: 'Horizon Digital',
     description:
-      'For this project I was faced with the challenge of designing and building a new website for the company I work for. I learnt a lot of valuable skills including best design practices for improved UX experience and accessibility standards.',
+      'In this project I designed and built a new website for the company I work for. I applied skills including good design practices for improved UX, accessibility and SEO optimization as well collaborating with others.',
     url: 'https://horizondigital.au/',
+  },
+
+  // Hiremii
+  {
+    id: 'professional4',
+    title: 'Hiremii',
+    description:
+      'In this project I teamed up with two backend developers to create an app for Hiremii. This app was built for the recruitment industry using AI to shortlist potential candidates to make the hiring process more efficient. It was my job to build the designs and collaborate with the team. I was also involved in working with the client directly, discussing designs and best practices.',
+    url: 'https://hiremii.com/',
+  },
+
+  // Lingnan University
+  {
+    id: 'professional3',
+    title: 'Lingnan University',
+    description:
+      'This project involved building a custom WordPress theme from scratch. Once the UI was designed, I had to map out and categorize the required data into taxonomies and custom post types. Once the backend solutions were finalized the frontend was built, the website was optimized for SEO and to meet accessibility standards.',
+    url: 'https://www.ln.edu.hk/cultural/',
+  },
+
+  // Pacha
+  {
+    id: 'professional7',
+    title: 'Pacha Asia',
+    description:
+      'This project was to build a website for an ecommerce company using the shopify platform to implement a new look for their brand selling environmentally focused feminine care products.',
+    url: 'https://pacha.asia/',
+  },
+
+  // My Foodie Box
+  {
+    id: 'professional6',
+    title: 'My Foodie Box',
+    description:
+      'This project was to freshen up an existing website by building a new design, also implementing a mobile friendly version.',
+    url: 'https://myfoodiebox.com.au/',
   },
 
   // Jobs In Cyber
@@ -17,40 +53,13 @@ export const professionalProjects = [
     url: '#',
   },
 
-  // Lingnan University
-  {
-    id: 'professional3',
-    title: 'Lingnan University',
-    description:
-      'During my time working as an intern in a web agency in Hong Kong I had the opportunity to work on a complete custom WordPress theme build. Once the UI was designed I had to map out exactly what data would be required and then categorize this into taxonomies and custom post types. Once we were happy with the backend solution I then moved into development where I gained valuable experience in writing clean, efficient code.',
-    url: 'https://www.ln.edu.hk/cultural/',
-  },
-
-  // Hiremii
-  {
-    id: 'professional4',
-    title: 'Hiremii',
-    description:
-      'In this project I teamed up with two backend developers to create an app for Hiremii. This app was built for the recruitment industry using AI to shortlist potential candidates to make the hiring process more efficient. It was my job to build the designs and collaborate with the team. I was also involved in dealing with the client directly, discussing designs and best practices. I gained skills in communication and learnt the importance of git flow.',
-    url: 'https://hiremii.com/',
-  },
-
   // Enable
   {
     id: 'professional5',
     title: 'Enable',
     description:
-      'This application needed a landing page, so I designed and built a template for the company to insert their own copy into. Working alone on this project gave me some flexibility to choose my own tech and recourses. For this task I ended up using Gatsby for its fast light weight framework. I enjoy using React in projects as I find the approach of breaking down code into small reusable components efficient and clean.',
+      'This application needed a landing page, so I designed and built a template for the company to insert their own copy into. Working alone on this project gave me some flexibility to choose my own tech and recourses. For this task I ended up using React / Gatsby for its fast light weight framework.',
     url: 'http://enable-app-landing-site.s3-website-ap-southeast-2.amazonaws.com/',
-  },
-
-  // My Foodie Box
-  {
-    id: 'professional6',
-    title: 'My Foodie Box',
-    description:
-      'This project was to freshen up an existing website by building a new design and also implementing a mobile friendly version.',
-    url: 'https://myfoodiebox.com.au/',
   },
 ];
 

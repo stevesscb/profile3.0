@@ -9,6 +9,10 @@
     margin-right: 1.5rem;
     transition: all 0.2s ease;
 
+    &:first-child {
+      margin-left: 1rem;
+    }
+
     &:hover {
       color: var(--color-secondary-hover);
     }

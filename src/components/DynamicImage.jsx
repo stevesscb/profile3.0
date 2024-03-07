@@ -6,6 +6,7 @@ import lingnanUniversity from 'src/images/lingnan.png';
 import hireMii from 'src/images/hiremii.png';
 import enable from 'src/images/enable.png';
 import foodieBox from 'src/images/foodie-box.png';
+import pacha from 'src/images/pacha.png';
 
 import horizonDigitalWebp from 'src/images/horizon-digital.webp';
 import jobsInCyberWebp from 'src/images/jobs-in-cyber.webp';
@@ -13,6 +14,7 @@ import lingnanUniversityWebp from 'src/images/lingnan.webp';
 import hireMiiWebp from 'src/images/hiremii.webp';
 import enableWebp from 'src/images/enable.webp';
 import foodieBoxWebp from 'src/images/foodie-box.webp';
+import pachaWebp from 'src/images/pacha.webp';
 
 import portfolio from 'src/images/portfolio.png';
 import portfolioWebp from 'src/images/portfolio.webp';
@@ -70,6 +72,14 @@ function DynamicImage({ panel }) {
         imageWp: foodieBoxWebp,
         image: foodieBox,
         url: 'https://www.ln.edu.hk/cultural/',
+      });
+    }
+
+    if (panel === 'professional7') {
+      setProject({
+        imageWp: pachaWebp,
+        image: pacha,
+        url: 'https://pacha.asia/',
       });
     }
 
