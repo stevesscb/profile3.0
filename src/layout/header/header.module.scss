@@ -1,6 +1,7 @@
 .header {
   text-transform: uppercase;
   color: var(--color-primary);
+  transition: all 0.4s ease;
 
   display: flex;
   justify-content: space-between;
