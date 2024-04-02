@@ -54,13 +54,13 @@ export const professionalProjects = [
   },
 
   // Enable
-  {
-    id: 'professional5',
-    title: 'Enable',
-    description:
-      'This application needed a landing page, so I designed and built a template for the company to insert their own copy into. Working alone on this project gave me some flexibility to choose my own tech and recourses. For this task I ended up using React / Gatsby for its fast, lightweight framework.',
-    url: 'http://enable-app-landing-site.s3-website-ap-southeast-2.amazonaws.com/',
-  },
+  // {
+  //   id: 'professional5',
+  //   title: 'Enable',
+  //   description:
+  //     'This application needed a landing page, so I designed and built a template for the company to insert their own copy into. Working alone on this project gave me some flexibility to choose my own tech and recourses. For this task I ended up using React / Gatsby for its fast, lightweight framework.',
+  //   url: 'http://enable-app-landing-site.s3-website-ap-southeast-2.amazonaws.com/',
+  // },
 ];
 
 export const personalProjects = [
