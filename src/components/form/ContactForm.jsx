@@ -65,8 +65,9 @@ function ContactForm() {
         >
           {({ errors: e, touched: t, isSubmitting }) => (
             <Form className='form'>
-              <label htmlFor='name' name='name' />
-              Your name:
+              <label htmlFor='name' name='name'>
+                Your name:
+              </label>
               <Field
                 id='name'
                 type='text'
@@ -94,8 +95,9 @@ function ContactForm() {
                 component='div'
                 className={'error-message'}
               />
-              <label htmlFor='message' name='message' />
-              Message:
+              <label htmlFor='message' name='message'>
+                Message:
+              </label>
               <Field
                 id='message'
                 as='textarea'
