@@ -64,9 +64,18 @@ export const professionalProjects = [
 ];
 
 export const personalProjects = [
-  // Portfolio site
+  // k6 consulting
   {
     id: "personal1",
+    title: "K6 consulting",
+    description:
+      "I had the exciting task of building a single page website for my brother in laws new company - a consulting agency that utilizes his unique skill-set to empower leaders and unify teams. For this task I chose to use tailwind, material-ui and React on top of vite for it's fast and lean development process. This webpage also features a carousel, smooth-scroll, accordion menu, and a mobile slide in navigation menu.",
+    url: "https://k6consulting.com.au/",
+  },
+
+  // Portfolio site
+  {
+    id: "personal2",
     title: "Portfolio site",
     description:
       "For this assignment, I wanted to create my own portfolio website utilizing CSS grid and SCSS along with React Gatsby. I chose to use SCSS as I enjoy using the BEM notation in my HTML - I find this method very clean and clear to read. I also enjoyed steering away from using any CSS framework as I was able to create all my own layouts and components relying on my skills as a CSS developer.",
