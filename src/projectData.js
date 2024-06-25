@@ -69,7 +69,7 @@ export const personalProjects = [
     id: "personal1",
     title: "K6 consulting",
     description:
-      "I had the exciting task of building a single page website for my brother in laws new company - a consulting agency that utilizes his unique skill-set to empower leaders and unify teams. For this task I chose to use tailwind, material-ui and React on top of vite for it's fast and lean development process. This webpage also features a carousel, smooth-scroll, accordion menu, and a mobile slide in navigation menu.",
+      "I had the exciting task of building a single page website for my brother in law's new company - a consulting agency that utilizes his unique skill-set to empower leaders and unify teams. For this task I chose to use tailwind, material-ui and React on top of vite for it's fast and lean development process. This webpage also features a carousel, smooth-scroll, accordion menu, and a mobile slide in navigation menu.",
     url: "https://k6consulting.com.au/",
   },
 
