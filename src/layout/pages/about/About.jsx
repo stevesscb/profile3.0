@@ -11,9 +11,8 @@ function About() {
           <p>
             I'm a front end developer, I help bring ideas to life by building
             out products that users love. I am always learning new technologies
-            and expanding my skills in the tech space. I have worked with a
-            variety of clients ranging from start-ups to educational
-            institutions.
+            and expanding my skills. I have worked with a variety of clients
+            ranging from start-ups to educational institutions.
           </p>
           <br />
           <p>
