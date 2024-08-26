@@ -30,11 +30,18 @@ const accordionStyles = {
 };
 
 const summaryStyles = {
-  borderRadius: '5px',
+  borderTopLeftRadius: '5px',
+  borderTopRightRadius: '5px',
   '&.Mui-expanded': {
     background: '#1e293b',
     color: '#cbd5e1',
   },
+};
+
+const detailsStyles = {
+  background: '#1e2023',
+  borderBottomLeftRadius: '5px',
+  borderBottomRightRadius: '5px',
 };
 
 const iconStyles = {
@@ -101,7 +108,7 @@ export default function ProjectsAccordion(props) {
               >
                 {professionalProject.title}
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails sx={detailsStyles}>
                 {professionalProject.description}
                 <div className={classes.imageContainer}>
                   <DynamicImage panel={expanded} />
@@ -134,7 +141,7 @@ export default function ProjectsAccordion(props) {
               >
                 {personalProject.title}
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails sx={detailsStyles}>
                 {personalProject.description}
                 <div className={classes.imageContainer}>
                   <DynamicImage panel={expanded} />
